@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create A Build System With NPM Script</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="create-a-build-system-with-npm-scripts">Create A Build System With NPM Scripts</h1>
+<h3 id="step-1.-create-project-and-enter-into-it">STEP 1. Create project and Enter into it</h3>
+<ol>
+<li>Open Bash Terminal</li>
+<li>Make Project Directory</li>
+<li>CD into that directory</li>
+</ol>
+<pre><code>$	~/myFolder&gt;	mkdir 	&lt;dirName&gt;
+$	~/myFolder&gt;	   cd 	&lt;dirName&gt;
+</code></pre>
+<hr>
+<h3 id="step-2.-initialize-and-run-npm">STEP 2. Initialize and Run NPM</h3>
+<ol>
+<li>Initialize the node package manager</li>
+<li>Change to parent directory</li>
+<li>Create vscode workspace</li>
+</ol>
+<pre><code>$	~/myFolder/project&gt;	 npm init
+$	~/myFolder/project&gt;	  cd ../ 		
+$	~/myFolder&gt;			code &lt;dirName&gt;
+</code></pre>
+<hr>
+<h3 id="step-3.-confirm-package.json-exists">STEP 3. Confirm package.json exists</h3>
+<p><em>Package.json File Sturcture Example</em></p>
+<pre><code>//package.json
+    {
+     //...
+     "devDependencies":  {
+     "building-static-server":  "*"
+     },
+     "scripts":  {
+     "build":  "make build",
+     "start":  "building-static-server -p 3001"
+     }
+     //...
+    }
+</code></pre>
+<hr>
+<h3 id="step-4.-add-css-templating-folders">STEP 4. Add css Templating Folders</h3>
+<ol>
+<li>Create <code>scss</code> subdirectory</li>
+<li>Create <code>build</code> subdirectory</li>
+</ol>
+<pre><code>$	~/myFolder/project&gt;	mkdir scss
+$	~/myFolder/project&gt;	   cd build
+</code></pre>
+<hr>
+<h3 id="step-5.-create-file-index.html--boilerplate-code">STEP 5. Create file <code>index.html</code> + boilerplate code</h3>
+<ol>
+<li>Add <code>index.html</code> to the <code>build</code> subdirectory</li>
+<li>Insert boilerplate html from <a href="https://jsbin.com/?html,js,output">jsbin.com</a></li>
+</ol>
+<pre><code>$	~/myFolder/project&gt;	touch build/index.html
+</code></pre>
+<p><em><a href="http://jsbin.com/?html,js,output">jsbin.com/?html,js,output</a> Boilerplate code example</em></p>
+<pre><code>	    &lt;!DOCTYPE html&gt;
+		    &lt;html&gt;
+			    &lt;head&gt;
+				      &lt;meta charset="utf-8"&gt;
+				      &lt;meta name="viewport" content="width=device-width"&gt;
+				      &lt;title&gt;JS Bin&lt;/title&gt;
+			    &lt;/head&gt;
+			    &lt;body&gt;
+
+			    &lt;/body&gt;
+		    &lt;/html&gt;
+</code></pre>
+<p>STEP 5. Confirm package.json created<br>
+STEP 6. CD to Parent Directory</p>
+<ul>
+<li><code>cd ../</code></li>
+</ul>
+<p>STEP 7. Run project in vscode</p>
+<ul>
+<li><code>code &lt;dirName&gt;</code></li>
+</ul>
+<p>Open up a shell environment</p>
+<ol>
+<li>
+<h3 id="section"></h3>
+</li>
+</ol>
+<p>Create the Project<br>
+<code>$mb &gt; mkdir staticbuilderserver</code></p>
+</div>
+</body>
+
+</html>
